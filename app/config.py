@@ -22,6 +22,8 @@ class Settings(BaseSettings):
         "default_response_class": HTMLResponse,  # Change default from JSONResponse
     }
 
+    DATA_DIR: Path = 'data'
+
     DISABLE_DOCS: bool = True
 
     @property

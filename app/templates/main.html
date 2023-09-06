@@ -1,15 +1,13 @@
 {% extends "/shared/_base.html" %}
 
 {% block content %}
-    <div class="bg-slate-50 max-w-screen-lg">
-        <h1 class="text-3xl font-bold uppercase">Simple Site</h1>
-        <p>This is just a simple site for you</p>
-    </div>
-    <nav class="flex flex-row self-start w-full h-28 py-2 justify-around items-end">
-        <div id="links" class="flex flex-row items-center uppercase">
-            <a class="px-3 py-1 mx-2 hover:text-blue-400 transition-all ease-in-out" href="#">Home</a>
-            <a class="px-3 py-1 mx-2 hover:text-blue-400 transition-all ease-in-out" href="#">About</a>
-            <a class="px-3 py-1 mx-2 hover:text-blue-400 transition-all ease-in-out" href="#">Links</a>
+    <section id="body" class="flex flex-col bg-slate-50 justify-center items-center max-w-screen-lg m-auto">
+        <div class="flex flex-col justify-center items-center py-10">
+            <h2 class="text-2xl leading-relaxed text-slate-800 uppercase">Welcome</h2>
+            <div class="flex flex-col justify-center content-center text-center">
+                <img src="{{random_artist['cover_image']}}" />
+                <span class="py-4 uppercase font-bold">{{random_artist["name"]}}</span>
+            </div>
         </div>
-    </nav>
+    </section>
 {% endblock %}

@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="{{ url_for('static', path='/main.css')}}" type="text/css" />
 </head>
 <body>
+    {% block header %}
+    {% include "/shared/_header.html" %}
+    {% endblock %}
     {% block content %}
     <h1>Hello, there!</h1>
     {% endblock %}
